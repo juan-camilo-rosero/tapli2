@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --primary-color-transparent: rgba(46, 46, 46, 0.6);
+    --secondary-color-transparent: rgba(255, 255, 255, 0.6);
+    --gray: #868686;
+    --border-radius: 1.25rem;
+}
+
+html{
+    background-color: var(--primary-color);
+    height: 200vh;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+
+header{
+    padding: 3rem 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 10rem;
+}
+
+.header-menu{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary-color-transparent);
+    border-radius: var(--border-radius);
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+.menu-line{
+    width: 50%;
+    height: .2rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    margin: .35rem 0;
+}
+
+.header-cta{
+    height: 4rem;
+    min-width: 6rem;
+    background-color: var(--secondary-color-transparent);
+    border: none;
+    outline: none;
+    font-weight: 800;
+    padding: 0 1.5rem;
+    font-size: 1.25rem;
+    border-radius: var(--border-radius);
+    margin-right: 3rem;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+/*Hero Section*/
+
+#hero-section{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.title img{
+    width: 3rem;
+}
+
+.title h1{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-right: 2rem;
+    text-align: center;
+}
+
+#hero-section h2{
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: 200;
+    padding: 0 3rem;
+}
+
+#hero-section a{
+    width: calc(100vw - 6rem);
+    font-size: 1.5rem;
+    padding: .9rem 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.start{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.see-more{
+    border: var(--gray) solid .2rem;
+    color: var(--gray);
+}
+
+/*How it works*/
+
+#how-it-works{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 0 3rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.content{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 0 3rem;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 5rem;
+}
+
+.see-demo{
+    width: calc(100vw - 6rem);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+/*Why Tapli*/
+
+#why-tapli{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+#why-tapli figure{
+    width: calc(100vw - 6rem);
+    padding: 3rem 0;
+    border: var(--secondary-color) solid .2rem;
+    border-radius: var(--border-radius);
+    margin: 4rem 0;
+}
+
+#why-tapli figure img{
+    height: 8rem;
+    display: block;
+    margin: auto;
+}
+
+#why-tapli figure h4{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+
+#why-tapli figure p{
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0 2rem;
+    font-weight: 200;
+}
