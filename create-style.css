@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --primary-color-transparent: rgba(46, 46, 46, 0.6);
+    --secondary-color-transparent: rgba(255, 255, 255, 0.6);
+    --gray: #868686;
+    --gray-transparent: rgba(32, 32, 32, 0.5);
+    --scrollbar: rgba(122, 122, 122, 0.5);
+    --border-radius: 1rem;
+}
+
+html{
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1::selection, h2::selection, h3::selection, input::selection, p::selection, b::selection, img::selection, a::selection{
+    background-color: var(--primary-color-transparent);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-color-transparent);
+    width: 10px;
+    border-radius: 20px;
+}
+
+.none{
+    display: none;
+}
+
+/*Counter*/
+
+.mobile-counter{
+    padding: 2rem 0;
+    width: 50vw;
+    margin-left: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 8rem;
+    z-index: 110;
+    top: 0;
+}
+
+.step{
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 5rem;
+    border: var(--secondary-color) .15rem solid;
+}
+
+.counter-line{
+    height: .2rem;
+    width: 13.75vw;
+    background-color: var(--secondary-color);
+}
+
+.done-step{
+    background-color: var(--secondary-color);
+}
+
+/*Restaurant name*/
+
+#name{
+    box-sizing: initial;
+    margin-top: 8rem;
+    height: calc(100vh - 20rem);
+    width: calc(100vw - 35vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 17.5vw;
+}
+
+#name h2{
+    color: var(--secondary-color);
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+#name input{
+    width: 65vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--secondary-color) .15rem solid;
+    outline: none;
+    font-size: 1.3rem;
+    padding: .5rem 0;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/*Buttons*/
+
+.buttons{
+    padding: 2rem 0;
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 12rem;
+    z-index: 110;
+    bottom: 0;
+    flex-direction: column;
+}
+
+.buttons img{
+    width: 2rem;
+}
+
+.continue{
+    width: 50vw;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+}

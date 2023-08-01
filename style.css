@@ -98,6 +98,11 @@ header{
     cursor: pointer;
     backdrop-filter: blur(10px);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 /*Hero Section*/
@@ -361,7 +366,7 @@ header{
         width: 20vw;
         font-size: 1.75rem;
         margin-bottom: 0;
-        transition: .2s;
+        transition: 1s !important;
         background-color: var(--secondary-color-transparent);
     }
 
