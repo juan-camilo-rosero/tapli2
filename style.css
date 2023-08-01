@@ -11,16 +11,38 @@
     --secondary-color-transparent: rgba(255, 255, 255, 0.6);
     --gray: #868686;
     --gray-transparent: rgba(32, 32, 32, 0.5);
+    --scrollbar: rgba(122, 122, 122, 0.5);
     --border-radius: 1rem;
 }
 
 html{
     background-color: var(--primary-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, p::selection, b::selection, img::selection, a::selection{
     background-color: var(--primary-color-transparent);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-color-transparent);
+    width: 10px;
+    border-radius: 20px;
 }
 
 /*Header*/
@@ -88,6 +110,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: -5rem;
 }
 
 .title{
@@ -293,16 +316,26 @@ header{
         flex-direction: row;
     }
 
+    .start{
+        background-color: var(--secondary-color-transparent);
+        color: var(--primary-color);
+    }
+
+    .start:hover{
+        background-color: var(--secondary-color);
+    }
+
+    .see-more:hover{
+        border-color: var(--secondary-color);
+        color: var(--secondary-color);
+    }
+
     #hero-section a{
         width: 20vw;
         font-size: 1.5rem;
         padding: .75rem 0;
         margin-bottom: 0;
         transition: .2s;
-    }
-
-    .start:hover, .see-more:hover{
-        width: 22vw !important;
     }
 
     /*How it works*/
@@ -328,10 +361,11 @@ header{
         font-size: 1.75rem;
         margin-bottom: 0;
         transition: .2s;
+        background-color: var(--secondary-color-transparent);
     }
 
     .see-demo:hover{
-        width: 22vw;
+        background-color: var(--secondary-color);
     }
 
     /*Why Tapli*/
