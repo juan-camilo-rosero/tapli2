@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=2, initial-scale=1.0">
     <title>Tapli - Crea un menú inteligente para tu restaurante</title>
-    <link rel="shortcut icon" href="logo blanco.png">
+    <link rel="shortcut icon" href="assets/logo blanco.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,17 +21,17 @@
         <button class="header-cta">Crea tu menú</button>
     </header>
     <section id="hero-section">
-        <div class="title">
+        <div class="title" data-aos="fade-up" data-aos-duration="1000">
             <h1>Tapli</h1>
-            <img src="logo blanco.png" alt="Logo Tapli">
+            <img src="assets/logo blanco.png" alt="Logo Tapli">
         </div>
-        <h2>Crea un <b>menú digital</b> para tu restaurante</h2>
-        <div class="buttons">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Crea un <b>menú digital</b> para tu restaurante</h2>
+        <div class="buttons" data-aos="fade-up" data-aos-duration="1000">
             <a class="start" href="#">Comenzar ahora</a>
             <a class="see-more" href="#how-it-works">Ver más</a>
         </div>
     </section>
-    <section id="how-it-works">
+    <section id="how-it-works" data-aos="fade-up" data-aos-duration="1000">
         <h3 class="subtitle">¿Cómo funciona?</h3>
         <p class="content">Con Tapli, podrás crear un menú digital, al cual tus clientes podrán acceder fácilmente escaneando un código qr</p>
         <a class="see-demo" href="https://juan-camilo-rosero.github.io/tapli/">Ver demo</a>
@@ -38,22 +39,27 @@
     <section id="why-tapli">
         <h3 class="subtitle">¿Por qué Tapli?</h3>
         <div class="figures">
-            <figure>
-                <img src="time.png" alt="Ahorra tiempo">
+            <figure data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/time.png" alt="Ahorra tiempo">
                 <h4>Ahorra tiempo</h4>
                 <p>Tus meseros gastarán menos tiempo en atender a los clientes, ofreciendo un mejor servicio</p>
             </figure>
-            <figure>
-                <img src="telefono-inteligente.png" alt="Celular">
+            <figure data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/telefono-inteligente.png" alt="Celular">
                 <h4>Carga rápida</h4>
                 <p>Olvídate de los PDF, que tardan demasiado en abrir y son molestos de usar. Nuestros menús están especialmente optimizados para cargar rápidamente en los celulares de tus clientes</p>
             </figure>
-            <figure>
-                <img src="tie.png" alt="Ahorra tiempo">
+            <figure data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/tie.png" alt="Ahorra tiempo">
                 <h4>Diseño elegante</h4>
                 <p>Distingue tu negocio de la competencia con un diseño minimalista y elegante</p>
             </figure>
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
