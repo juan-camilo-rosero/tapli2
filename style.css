@@ -33,6 +33,7 @@ header{
     align-items: center;
     position: fixed;
     height: 10rem;
+    z-index: 110;
 }
 
 .header-menu{
