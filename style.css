@@ -78,10 +78,6 @@ header{
     cursor: pointer;
 }
 
-.header-cta:hover{
-    background-color: red;
-}
-
 /*Hero Section*/
 
 #hero-section{
